@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!-- WIZARD VIEWS -->
+        <record id="vehicles_report_wizard_form" model="ir.ui.view">
+            <field name="name">Vehicles Report Wizard</field>
+            <field name="model">vehicles.report.wizard</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Vehicles Report" col="4">
+                    <group>
+                        <field name="start_date"/>
+                        <field name="end_date"/>
+                        <footer>
+                            <button type="special" special="cancel" string="Cancel" icon="fa-times-circle"/>
+                            <button type="object" string="Generate Report" name="generateReport" icon="fa-mail-reply-all"/>
+                        </footer>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_open_report_wizard" model="ir.actions.act_window">
+            <field name="name">Open Vehicles Report Wizard</field>
+            <field name="res_model">vehicles.report.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <menuitem id="vehicle_report" name="Report" parent="vehicle" sequence="2" action="action_open_report_wizard"/>
+
+        <!-- REPORTS VIEWS -->
+        <record model="report.paperformat" id="paperformat_vehicles_report_wizard">
+            <field name="name">paperformat_vehicles_report_wizard</field>
+            <field name="default" eval="True" />
+            <field name="format">A4</field>
+            <field name="page_height">0</field>
+            <field name="page_width">0</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">7</field>
+            <field name="margin_bottom">7</field>
+            <field name="margin_left">7</field>
+            <field name="margin_right">7</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">35</field>
+            <field name="dpi">90</field>
+        </record>
+
+        <template id="vehicles_report_template">
+            <t t-call="web.html_container">
+               <div class="article">
+                   <div class="page">
+                       <img class="img Firma_fc" src="/vehicles/static/description/icon.png" style="height:50px;"/>
+                       <div style="width:100%">
+                           <h5 style="margin:auto; text-align:center; margin-bottom:10px; margin-top:10px">VEHICLES REPORT</h5>
+                       </div>
+                       <table style="width:100%; border:1px solid black; font-size:12px">
+                           <tr>
+                               <td style="border:1px solid black; width:10%"><span>License plate</span></td>
+                               <td style="border:1px solid black; width:10%"><span>Purchase date</span></td>
+                               <td style="border:1px solid black; width:10%"><span>Purchase cost</span></td>
+                               <td style="border:1px solid black; width:10%"><span>Price</span></td>
+                               <td style="border:1px solid black; width:10%"><span>Mileage</span></td>
+                               <td style="border:1px solid black; width:10%"><span>Type</span></td>
+                               <td style="border:1px solid black; width:10%"><span>Year</span></td>
+                               <td style="border:1px solid black; width:10%"><span>Brand</span></td>
+                               <td style="border:1px solid black; width:10%"><span>Model</span></td>
+                               <td style="border:1px solid black; width:10%"><span>Services Qty</span></td>
+                           </tr>
+                           <t t-foreach="data" t-as="d">
+                               <tr>
+                                   <td style="border:1px solid black; width:10%"><span t-if="d.license_plate" t-esc="d.license_plate"/></td>
+                                   <td style="border:1px solid black; width:10%"><span t-if="d.purchase_date" t-esc="d.purchase_date"/></td>
+                                   <td style="border:1px solid black; width:10%"><span t-esc="d.purchase_cost"/></td>
+                                   <td style="border:1px solid black; width:10%"><span t-esc="d.price"/></td>
+                                   <td style="border:1px solid black; width:10%"><span t-esc="d.mileage"/></td>
+                                   <td style="border:1px solid black; width:10%"><span t-if="d.type" t-esc="d.type"/></td>
+                                   <td style="border:1px solid black; width:10%"><span t-esc="d.year"/></td>
+                                   <td style="border:1px solid black; width:10%"><span t-if="d.brand" t-esc="d.brand.name"/></td>
+                                   <td style="border:1px solid black; width:10%"><span t-if="d.model" t-esc="d.model.name"/></td>
+                                   <td style="border:1px solid black; width:10%"><span t-esc="d.qty_services"/></td>
+                               </tr>
+                           </t>
+                       </table>
+                   </div>
+               </div>
+            </t>
+        </template>
+
+        <report
+            id = "vehicles_report"
+            model = "vehicles.report.wizard"
+            string = "Vehicles Report"
+            report_type = "qweb-pdf"
+            paperformat="paperformat_vehicles_report_wizard"
+            name = "vehicles.vehicles_report_template"
+            file = "vehicles.vehicles_report_template"
+        />
+    </data>
+</openerp>

@@ -1,0 +1,5 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"vehicle_model_access","vehicle_model_access",model_vehicle,,1,1,1,1
+"vehicle_brand_model_access","vehicle_brand_model_access",model_vehicle_brand,,1,1,1,1
+"vehicle_model_model_access","vehicle_model_model_access",model_vehicle_model,,1,1,1,1
+"vehicles_report_wizard_model_access","vehicles_report_wizard_model_access",model_vehicles_report_wizard,,1,1,1,1

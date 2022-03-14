@@ -1,0 +1,337 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* vehicles
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e-20210713\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-14 01:07+0000\n"
+"PO-Revision-Date: 2022-03-14 01:07+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: vehicles
+#: model_terms:ir.ui.view,arch_db:vehicles.vehicles_report_template
+msgid "<span>Brand</span>"
+msgstr "<span>Marca</span>"
+
+#. module: vehicles
+#: model_terms:ir.ui.view,arch_db:vehicles.vehicles_report_template
+msgid "<span>License plate</span>"
+msgstr "<span>Placa</span>"
+
+#. module: vehicles
+#: model_terms:ir.ui.view,arch_db:vehicles.vehicles_report_template
+msgid "<span>Mileage</span>"
+msgstr "<span>Kilometraje</span>"
+
+#. module: vehicles
+#: model_terms:ir.ui.view,arch_db:vehicles.vehicles_report_template
+msgid "<span>Model</span>"
+msgstr "<span>Modelo</span>"
+
+#. module: vehicles
+#: model_terms:ir.ui.view,arch_db:vehicles.vehicles_report_template
+msgid "<span>Price</span>"
+msgstr "<span>Precio</span>"
+
+#. module: vehicles
+#: model_terms:ir.ui.view,arch_db:vehicles.vehicles_report_template
+msgid "<span>Purchase cost</span>"
+msgstr "<span>Precio de compra</span>"
+
+#. module: vehicles
+#: model_terms:ir.ui.view,arch_db:vehicles.vehicles_report_template
+msgid "<span>Purchase date</span>"
+msgstr "<span>Fecha de compra</span>"
+
+#. module: vehicles
+#: model_terms:ir.ui.view,arch_db:vehicles.vehicles_report_template
+msgid "<span>Services Qty</span>"
+msgstr "<span>Cantidad de servicios</span>"
+
+#. module: vehicles
+#: model_terms:ir.ui.view,arch_db:vehicles.vehicles_report_template
+msgid "<span>Type</span>"
+msgstr "<span>Tipo</span>"
+
+#. module: vehicles
+#: model_terms:ir.ui.view,arch_db:vehicles.vehicles_report_template
+msgid "<span>Year</span>"
+msgstr "<span>Año</span>"
+
+#. module: vehicles
+#: model:ir.model.fields,field_description:vehicles.field_vehicle__brand
+#: model:ir.model.fields,field_description:vehicles.field_vehicle_brand__name
+msgid "Brand"
+msgstr "Marca"
+
+#. module: vehicles
+#: model_terms:ir.ui.view,arch_db:vehicles.vehicle_search
+msgid "By brand"
+msgstr "Por marca"
+
+#. module: vehicles
+#: model_terms:ir.ui.view,arch_db:vehicles.vehicle_search
+msgid "By engine model"
+msgstr "Por modelo de motor"
+
+#. module: vehicles
+#: model_terms:ir.ui.view,arch_db:vehicles.vehicle_search
+msgid "By model"
+msgstr "Por modelo"
+
+#. module: vehicles
+#: model_terms:ir.ui.view,arch_db:vehicles.vehicle_search
+msgid "By services quantity"
+msgstr "Por cantidad de servicios"
+
+#. module: vehicles
+#: model_terms:ir.ui.view,arch_db:vehicles.vehicle_search
+msgid "By type"
+msgstr "Por tipo"
+
+#. module: vehicles
+#: model_terms:ir.ui.view,arch_db:vehicles.vehicle_search
+msgid "By year"
+msgstr "Por año"
+
+#. module: vehicles
+#: model_terms:ir.ui.view,arch_db:vehicles.vehicles_report_wizard_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: vehicles
+#: model:ir.model.fields,field_description:vehicles.field_vehicle__create_uid
+#: model:ir.model.fields,field_description:vehicles.field_vehicle_brand__create_uid
+#: model:ir.model.fields,field_description:vehicles.field_vehicle_model__create_uid
+#: model:ir.model.fields,field_description:vehicles.field_vehicles_report_wizard__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: vehicles
+#: model:ir.model.fields,field_description:vehicles.field_vehicle__create_date
+#: model:ir.model.fields,field_description:vehicles.field_vehicle_brand__create_date
+#: model:ir.model.fields,field_description:vehicles.field_vehicle_model__create_date
+#: model:ir.model.fields,field_description:vehicles.field_vehicles_report_wizard__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: vehicles
+#: model:ir.model.fields,field_description:vehicles.field_report_vehicles_vehicles_report_template__display_name
+#: model:ir.model.fields,field_description:vehicles.field_vehicle__display_name
+#: model:ir.model.fields,field_description:vehicles.field_vehicle_brand__display_name
+#: model:ir.model.fields,field_description:vehicles.field_vehicle_model__display_name
+#: model:ir.model.fields,field_description:vehicles.field_vehicles_report_wizard__display_name
+msgid "Display Name"
+msgstr "Nombre"
+
+#. module: vehicles
+#: model:ir.model.fields,field_description:vehicles.field_vehicles_report_wizard__end_date
+msgid "End date"
+msgstr "Fecha final"
+
+#. module: vehicles
+#: model:ir.model.fields,field_description:vehicles.field_vehicle__engine_model
+msgid "Engine model"
+msgstr "Modelo de motor"
+
+#. module: vehicles
+#: model_terms:ir.ui.view,arch_db:vehicles.vehicles_report_wizard_form
+msgid "Generate Report"
+msgstr "Generar reporte"
+
+#. module: vehicles
+#: model:ir.model.fields,field_description:vehicles.field_report_vehicles_vehicles_report_template__id
+#: model:ir.model.fields,field_description:vehicles.field_vehicle__id
+#: model:ir.model.fields,field_description:vehicles.field_vehicle_brand__id
+#: model:ir.model.fields,field_description:vehicles.field_vehicle_model__id
+#: model:ir.model.fields,field_description:vehicles.field_vehicles_report_wizard__id
+msgid "ID"
+msgstr "ID"
+
+#. module: vehicles
+#: model:ir.model.fields.selection,name:vehicles.selection__vehicle__type__industrial
+msgid "Industrial"
+msgstr "Industrial"
+
+#. module: vehicles
+#: model_terms:ir.ui.view,arch_db:vehicles.vehicle_search
+msgid "Industrial Vehicles"
+msgstr "Vehículos industriales"
+
+#. module: vehicles
+#: model:ir.model.fields,field_description:vehicles.field_report_vehicles_vehicles_report_template____last_update
+#: model:ir.model.fields,field_description:vehicles.field_vehicle____last_update
+#: model:ir.model.fields,field_description:vehicles.field_vehicle_brand____last_update
+#: model:ir.model.fields,field_description:vehicles.field_vehicle_model____last_update
+#: model:ir.model.fields,field_description:vehicles.field_vehicles_report_wizard____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: vehicles
+#: model:ir.model.fields,field_description:vehicles.field_vehicle__write_uid
+#: model:ir.model.fields,field_description:vehicles.field_vehicle_brand__write_uid
+#: model:ir.model.fields,field_description:vehicles.field_vehicle_model__write_uid
+#: model:ir.model.fields,field_description:vehicles.field_vehicles_report_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Última modificación por"
+
+#. module: vehicles
+#: model:ir.model.fields,field_description:vehicles.field_vehicle__write_date
+#: model:ir.model.fields,field_description:vehicles.field_vehicle_brand__write_date
+#: model:ir.model.fields,field_description:vehicles.field_vehicle_model__write_date
+#: model:ir.model.fields,field_description:vehicles.field_vehicles_report_wizard__write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: vehicles
+#: model:ir.model.fields,field_description:vehicles.field_vehicle__license_plate
+msgid "License plate"
+msgstr "Placa"
+
+#. module: vehicles
+#: model:ir.model.fields,field_description:vehicles.field_vehicle__mileage
+msgid "Mileage"
+msgstr "Kilometraje"
+
+#. module: vehicles
+#: model:ir.model.fields,field_description:vehicles.field_vehicle__model
+#: model:ir.model.fields,field_description:vehicles.field_vehicle_model__name
+msgid "Model"
+msgstr "Modelo"
+
+#. module: vehicles
+#: model:ir.actions.act_window,name:vehicles.action_open_report_wizard
+msgid "Open Vehicles Report Wizard"
+msgstr "Abrir Wizard de Reporte de Vehículos"
+
+#. module: vehicles
+#: model:ir.ui.menu,name:vehicles.vehicle_panel
+msgid "Panel"
+msgstr "Panel"
+
+#. module: vehicles
+#: model:ir.actions.act_window,name:vehicles.action_vehicle_tree_view
+msgid "Panel Vehicle Module"
+msgstr "Panel del módulo de vehiculos"
+
+#. module: vehicles
+#: model:ir.model.fields,field_description:vehicles.field_vehicle__price
+msgid "Price"
+msgstr "Precio"
+
+#. module: vehicles
+#: model:ir.model.fields,field_description:vehicles.field_vehicle__purchase_cost
+msgid "Purchase cost"
+msgstr "Precio de compra"
+
+#. module: vehicles
+#: model:ir.model.fields,field_description:vehicles.field_vehicle__purchase_date
+msgid "Purchase date"
+msgstr "Fecha de compra"
+
+#. module: vehicles
+#: model:ir.model.fields.selection,name:vehicles.selection__vehicle__type__regular
+msgid "Regular"
+msgstr "Regular"
+
+#. module: vehicles
+#: model_terms:ir.ui.view,arch_db:vehicles.vehicle_search
+msgid "Regular Vehicles"
+msgstr "Vehículos regulares"
+
+#. module: vehicles
+#: model:ir.ui.menu,name:vehicles.vehicle_report
+msgid "Report"
+msgstr "Reporte"
+
+#. module: vehicles
+#: model:ir.actions.report,name:vehicles.vehicles_report
+msgid "Vehicles Report"
+msgstr "Reporte de Vehículos"
+
+#. module: vehicles
+#: model:ir.model.fields,field_description:vehicles.field_vehicle__qty_services
+msgid "Services Quantity"
+msgstr "Cantidad de servicios"
+
+#. module: vehicles
+#: model:ir.model.fields,field_description:vehicles.field_vehicles_report_wizard__start_date
+msgid "Start date"
+msgstr "Fecha de inicio"
+
+#. module: vehicles
+#: model_terms:ir.ui.view,arch_db:vehicles.vehicles_report_template
+msgid "VEHICLES REPORT"
+msgstr "REPORTE DE VEHÍCULOS"
+
+#. module: vehicles
+#: model_terms:ir.ui.view,arch_db:vehicles.vehicle_form
+msgid "Vehicle FormView"
+msgstr "Vista Form de Vehículos"
+
+#. module: vehicles
+#: model_terms:ir.ui.view,arch_db:vehicles.vehicle_tree
+msgid "Vehicle TreeView"
+msgstr "Vista Tree de Vehículos"
+
+#. module: vehicles
+#: model:ir.model.fields,field_description:vehicles.field_vehicle__type
+msgid "Vehicle type"
+msgstr "Tipo de Vehículo"
+
+#. module: vehicles
+#: model:ir.ui.menu,name:vehicles.vehicle
+msgid "Vehicles"
+msgstr "Vehículos"
+
+#. module: vehicles
+#: model_terms:ir.ui.view,arch_db:vehicles.vehicles_report_wizard_form
+msgid "Vehicles Report"
+msgstr "Reporte de Vehículos"
+
+#. module: vehicles
+#: model:ir.model.fields,field_description:vehicles.field_vehicle__year
+msgid "Year"
+msgstr "Año"
+
+#. module: vehicles
+#: model_terms:ir.ui.view,arch_db:vehicles.vehicle_search
+msgid "Year < 2000"
+msgstr "Año < 2000"
+
+#. module: vehicles
+#: model_terms:ir.ui.view,arch_db:vehicles.vehicle_search
+msgid "Year >= 2000"
+msgstr "Año >= 2000"
+
+#. module: vehicles
+#: model:ir.model,name:vehicles.model_report_vehicles_vehicles_report_template
+msgid "report.vehicles.vehicles_report_template"
+msgstr "report.vehicles.vehicles_report_template"
+
+#. module: vehicles
+#: model:ir.model,name:vehicles.model_vehicle
+msgid "vehicle"
+msgstr "vehículo"
+
+#. module: vehicles
+#: model:ir.model,name:vehicles.model_vehicle_brand
+msgid "vehicle.brand"
+msgstr "vehicle.brand"
+
+#. module: vehicles
+#: model:ir.model,name:vehicles.model_vehicle_model
+msgid "vehicle.model"
+msgstr "vehicle.model"
+
+#. module: vehicles
+#: model:ir.model,name:vehicles.model_vehicles_report_wizard
+msgid "vehicles.report.wizard"
+msgstr "vehicles.report.wizard"

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Form view -->
+        <record id="vehicle_form" model="ir.ui.view">
+            <field name="name">Vehicle FormView</field>
+            <field name="model">vehicle</field>
+            <field name="arch" type="xml">
+                <form string="Vehicle FormView">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="license_plate"/>
+                                <field name="purchase_date"/>
+                                <field name="purchase_cost"/>
+                                <field name="price"/>
+                                <field name="mileage"/>
+                                <field name="type"/>
+                            </group>
+                            <group>
+                                <field name="year"/>
+                                <field name="brand"/>
+                                <field name="model"/>
+                                <field name="engine_model"/>
+                                <field name="qty_services"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Tree view -->
+        <record id="vehicle_tree" model="ir.ui.view">
+            <field name="name">Vehicle TreeView</field>
+            <field name="model">vehicle</field>
+            <field name="arch" type="xml">
+                <tree string="Vehicle TreeView">
+                    <field name="license_plate"/>
+                    <field name="purchase_date"/>
+                    <field name="purchase_cost"/>
+                    <field name="price"/>
+                    <field name="mileage"/>
+                    <field name="type"/>
+                    <field name="year"/>
+                    <field name="brand"/>
+                    <field name="model"/>
+                    <field name="engine_model"/>
+                    <field name="qty_services"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Search view -->
+        <record id="vehicle_search" model="ir.ui.view">
+            <field name="name">Vehicle SearchView</field>
+            <field name="model">vehicle</field>
+            <field name="arch" type="xml">
+                <search>
+                    <!-- New parameters in search bar -->
+                    <field name="license_plate"/>
+                    <field name="purchase_date"/>
+                    <field name="purchase_cost"/>
+                    <field name="price"/>
+                    <field name="mileage"/>
+                    <field name="type"/>
+                    <field name="year"/>
+                    <field name="brand"/>
+                    <field name="model"/>
+                    <field name="engine_model"/>
+                    <field name="qty_services"/>
+
+                    <!-- New filters -->
+                    <filter name="type_regular" string="Regular Vehicles" domain="[('type', '=', 'regular')]"/>
+                    <filter name="type_industrial" string="Industrial Vehicles" domain="[('type', '=', 'industrial')]"/>
+                    <filter name="last_century_year" string="Year &lt; 2000" domain="[('year', '&lt;', '2000')]"/>
+                    <filter name="this_century_year" string="Year &gt;= 2000" domain="[('year', '&gt;=', '2000')]"/>
+
+                    <!-- New Groups-->
+                    <filter name="group_type" string="By type" context="{'group_by':'type'}"/>
+                    <filter name="group_brand" string="By brand" context="{'group_by':'brand'}"/>
+                    <filter name="group_year" string="By year" context="{'group_by':'year'}"/>
+                    <filter name="group_model" string="By model" context="{'group_by':'model'}"/>
+                    <filter name="group_engine_model" string="By engine model" context="{'group_by':'engine_model'}"/>
+                    <filter name="group_qty_services" string="By services quantity" context="{'group_by':'qty_services'}"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_vehicle_tree_view" model="ir.actions.act_window">
+            <field name="name">Panel Vehicle Module</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vehicle</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="vehicle_search"/>
+        </record>
+
+        <menuitem id="vehicle" name="Vehicles" web_icon="vehicles,static/description/icon.png" sequence="1"/>
+        <menuitem id="vehicle_panel" name="Panel" parent="vehicle" sequence="1" action="action_vehicle_tree_view"/>
+    </data>
+</odoo>

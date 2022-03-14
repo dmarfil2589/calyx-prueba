@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- BRAND DATA-->
+        <record id="brand_1" model="vehicle.brand">
+            <field name="name">Cadillac</field>
+        </record>
+        <record id="brand_2" model="vehicle.brand">
+            <field name="name">Volkswagen</field>
+        </record>
+        <record id="brand_3" model="vehicle.brand">
+            <field name="name">Chevrolet</field>
+        </record>
+        <record id="brand_4" model="vehicle.brand">
+            <field name="name">Honda</field>
+        </record>
+        <record id="brand_5" model="vehicle.brand">
+            <field name="name">Toyota</field>
+        </record>
+
+        <!-- MODEL DATA-->
+        <record id="model_1" model="vehicle.model">
+            <field name="name">Cadillac CT6 Sedan</field>
+        </record>
+        <record id="model_2" model="vehicle.model">
+            <field name="name">Volkswagen Taigo</field>
+        </record>
+        <record id="model_3" model="vehicle.model">
+            <field name="name">Chevrolet Camaro</field>
+        </record>
+        <record id="model_4" model="vehicle.model">
+            <field name="name">Honda Civic Lxs</field>
+        </record>
+        <record id="model_5" model="vehicle.model">
+            <field name="name">Toyota Etios Aibo</field>
+        </record>
+
+        <!-- VEHICLES DATA-->
+        <record id="vehicle_1" model="vehicle">
+            <field name="license_plate">A124FGH</field>
+            <field name="purchase_date">2022-03-14</field>
+            <field name="purchase_cost">300</field>
+            <field name="mileage">20000</field>
+            <field name="year">2001</field>
+            <field name="brand" ref="brand_1"></field>
+            <field name="model" ref="model_1"></field>
+        </record>
+        <record id="vehicle_2" model="vehicle">
+            <field name="license_plate">BHY6754</field>
+            <field name="purchase_date">2022-03-14</field>
+            <field name="purchase_cost">400</field>
+            <field name="mileage">9000</field>
+            <field name="year">2002</field>
+            <field name="brand" ref="brand_2"></field>
+            <field name="model" ref="model_2"></field>
+        </record>
+        <record id="vehicle_3" model="vehicle">
+            <field name="license_plate">CYHU789</field>
+            <field name="purchase_date">2022-03-14</field>
+            <field name="purchase_cost">700</field>
+            <field name="mileage">10000</field>
+            <field name="year">2003</field>
+            <field name="brand" ref="brand_3"></field>
+            <field name="model" ref="model_3"></field>
+        </record>
+        <record id="vehicle_4" model="vehicle">
+            <field name="license_plate">MNOUY6G5</field>
+            <field name="purchase_date">2022-03-14</field>
+            <field name="purchase_cost">250</field>
+            <field name="mileage">2000</field>
+            <field name="year">2004</field>
+            <field name="brand" ref="brand_4"></field>
+            <field name="model" ref="model_4"></field>
+        </record>
+        <record id="vehicle_5" model="vehicle">
+            <field name="license_plate">J7865FG</field>
+            <field name="purchase_date">2021-03-14</field>
+            <field name="purchase_cost">600</field>
+            <field name="mileage">15000</field>
+            <field name="year">2005</field>
+            <field name="brand" ref="brand_5"></field>
+            <field name="model" ref="model_5"></field>
+        </record>
+    </data>
+</odoo>
